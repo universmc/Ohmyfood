@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/****** General ***********/
+/* layout */
+/* front */
+* {
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --Green: #99E2D0;
+  --Green-Font: #008766;
+  --Blue: #89C8FA;
+  --Blue-2: #003A68;
+  --Primary: #9356DC;
+  --Grey-2: #EAEAEA;
+  --body: white;
+}
+
+html, body {
+  /* LAYOUT */
+  position: relative;
+  margin:0;
+  padding:0;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+/* Mobile fist */
+
+
+
+/* version tablette */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Vesion desktop */

@@ -1,0 +1,98 @@
+#wrapper {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-item {
+      width: 90%;
+      background-color: #F6F6F6;
+      display: flex;
+      flex-direction: column;
+      // big padding so the card feels less crowded
+      padding: 10px;
+      border-radius: 15px; 
+      box-shadow: 0 1px 5px #787878;
+      // position relative as we decided to put the child value in position absolute
+      position: relative;
+      // overflow-x hidden is what keeps the checkbox hidden as well as its corners when appears
+      overflow-x: hidden;
+      // not wrapping white space to let lengthy text in one line
+      white-space: nowrap;
+    
+      &__name, &__desc {
+        // this overflow-x hidden is what keeps the description text in check
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        // the width of the name and desc spans will be reduced on hover
+        transition: width .5s;
+      }
+    
+      &__name {
+         font-weight: bold;
+         font-size: 20px;
+         width: 100%; 
+      }
+    
+      &__desc {
+         line-height: 2;
+         width: 100%;
+      }
+    
+      &__value {
+        position: absolute;
+        right: 6%;
+        bottom: 15%;
+        font-weight: bold;
+        // value will be translated on hover
+        transform: translate(0);
+        transition: transform .5s;
+      }
+    
+      &__select{
+        position: absolute; 
+        top: 0; 
+        right: 0; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        width: 20%; 
+        height: 100%; 
+        background-color: #99E2D0;
+        // base translation is what moves the element right of the card, to be hidden
+        transform: translateX(100%);
+        transition: transform .5s;
+        
+        i {
+          font-size: 23px; 
+          color: white;
+          transition: transform 0.4s;
+        }
+      }
+  
+      &:hover{
+        cursor: pointer;
+        // reducing the width of name and description
+        & > .card-item__name {
+          width: 80%;
+        }
+        & > .card-item__desc {
+          width: 80%;
+        }
+        // translating the value to the left
+        & > .card-item__value {
+          transform: translateX(-220%);
+        }
+        & > .card-item__select {
+          // putting back the checkmark div where it should have been if not translated
+          transform: translateX(0);
+          // rotating checkmark effect
+          i {
+            transform: rotate(360deg);
+          }
+        }
+      } 
+    
+  }

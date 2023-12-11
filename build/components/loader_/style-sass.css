@@ -1,0 +1,43 @@
+.screen {
+  /* LAYOUT */
+  width: 987px;
+  height: 610px;
+  display: flex;
+  flex-direction: row;
+  border: 1px black solid;
+  border-radius: 23%;
+}
+
+.scan-y {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 33px;
+  left: 23px;
+}
+
+.scan-X {
+  display: flex;
+  position: relative;
+  left: 177px;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.mainContainer {
+  position: absolute;
+  top: 144px;
+  left: 164px;
+  border: 1px black solid;
+  border-radius: 20px;
+}
+
+#box {
+  width: 32px;
+  height: 32px;
+  border: 1px black solid;
+}
+
+/*# sourceMappingURL=style-sass.css.map */
