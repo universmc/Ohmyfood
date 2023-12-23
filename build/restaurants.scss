@@ -252,31 +252,33 @@ h2 {
   height: 50px; 
   border-radius: 25px;
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0 8px 16px rgba(24, 23, 23, 0.5); 
   color: white;
 
   &:hover {
-      background: linear-gradient(201deg, #FF79DA -5.2%, #9356DC 110.74%);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
+    background: linear-gradient(201deg, #FF79DA  -5.2%, #9356DC 110.74%);
+    box-shadow: 0 8px 16px rgba(24, 23, 23, 1.1); 
+}
 
-  &:active {
-      background: linear-gradient(201deg, #FF79DA -5.2%, #9356DC 110.74%);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);  
-  }
+&:active {
+    background: linear-gradient(201deg, #FF79DA  -5.2%, #9356DC 110.74%);
+    box-shadow: 0 8px 16px rgba(24, 23, 23, 1.1);
+}
 }
 
 
 /* FOOTER */
 footer {
+  min-width: 100%;
   gap: 20px;
   color: white;
-  padding:20px;
   flex-direction: column;
   background-color: #353535;
 }
 .footer-container {
   display: flex;
   flex-direction: column;
+  padding:2Àpx;
   gap:20px
 }
 .ls-container {
@@ -322,14 +324,15 @@ footer {
   }
   footer {
     display: flex;
+    min-width: 100%; 
     top:-100px;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 20px;
     background-color: #353535;
   }
   .footer-container {
     display: flex;
+    padding: 20px;
     flex-direction: row;
     gap:100px;
   }
