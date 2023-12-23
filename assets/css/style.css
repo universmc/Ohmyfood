@@ -167,13 +167,11 @@ header {
 }
 .hero-btn:hover {
   background: linear-gradient(201deg, #FF79DA -5.2%, #9356DC 110.74%);
-  box-shadow: 0 8px 16px rgba(24, 23, 23, 0.1);
+  box-shadow: 0 8px 16px rgb(24, 23, 23);
 }
 .hero-btn:active {
   background: linear-gradient(201deg, #FF79DA -5.2%, #9356DC 110.74%);
-  box-shadow: 0 8px 16px rgba(24, 23, 23, 0.1);
-  min-width: 210px;
-  min-height: 50px;
+  box-shadow: 0 8px 16px rgb(24, 23, 23);
 }
 
 /* ***************** */
@@ -249,10 +247,14 @@ article.btn {
   padding-bottom: 30px;
   gap: 30px;
   border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  box-shadow: 0 8px 16px rgba(24, 23, 23, 0.4);
   gap: 20px;
   /* FONT */
   background-color: #EAEAEA;
+}
+.btn-class-f:hover {
+  box-shadow: 0 8px 16px rgb(24, 23, 23);
 }
 
 .btn-article {
@@ -330,6 +332,8 @@ article.btn {
   position: absolute;
   background-color: #99E2D0;
   color: #008766;
+  padding: 7px;
+  border-radius: 2px;
   top: 13px;
   right: 15px;
 }
