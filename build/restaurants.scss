@@ -37,25 +37,32 @@ header {
 }
 .header-row {
   display: flex;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   flex-direction: row;
-  padding: 14px 89px 13px 17px;
   
 }
 .arrow-icon {
   display:flex;
+  width: 5%;
   justify-content: flex-end;
   i {
       font-size: 32px; /* Taille souhaitée */
 
   }
 }
+
 .arrow-icon a{
 color: inherit;
 } 
 .logo-header {
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: center;
+}
+.arrow-none{
+  width: 5%;
 }
 .header-image img {
   object-fit: cover;
