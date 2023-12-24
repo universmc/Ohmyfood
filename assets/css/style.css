@@ -100,10 +100,7 @@ header {
 }
 
 .logo-header img {
-  min-width: 200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  min-height: 60%;
+  height: 35px;
   object-fit: cover;
   align-items: center;
 }
@@ -183,7 +180,7 @@ main {
 }
 
 .row {
-  min-width: 80vh;
+  min-width: 95%;
   margin-bottom: 20px;
 }
 
@@ -465,12 +462,9 @@ footer {
     min-height: 15%;
   }
   .logo-header img {
-    min-height: 10%;
-    width: 200px;
     height: 35px;
   }
   .location {
-    min-height: 15%;
     font-size: larger;
   }
   .hero-ban {
@@ -502,7 +496,7 @@ footer {
   }
   .row {
     align-items: center;
-    min-width: 80%;
+    min-width: 95%;
     min-height: 100%;
     flex-direction: column;
     display: flex;
@@ -547,13 +541,15 @@ footer {
   /* ***************** */
   footer {
     display: flex;
+    min-height: 5%;
     justify-content: end;
   }
   .footer-container {
     display: flex;
-    width: 80%;
+    padding: 40px 20px 0 20px;
     flex-direction: row;
     justify-content: space-between;
+    gap: 60px;
   }
   .ls-container {
     display: flex;
@@ -595,13 +591,8 @@ footer {
     min-height: 15%;
   }
   .logo-header img {
-    min-height: 10%;
-    width: 200px;
     height: 35px;
-  }
-  .location {
-    min-height: 15%;
-    font-size: larger;
+    padding: 15px;
   }
   .hero-ban {
     min-width: 100%;
@@ -685,9 +676,10 @@ footer {
   }
   .footer-container {
     display: flex;
-    width: 80%;
+    padding: 40px 20px 0 20px;
     flex-direction: row;
     justify-content: space-between;
+    gap: 60px;
   }
   .ls-container {
     display: flex;
