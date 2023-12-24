@@ -234,8 +234,10 @@ main {
     justify-content: space-evenly;
     gap: 30px;
     padding-top: 30px;
+    padding-bottom: 30px;
 
 }
+.btn { width: 95%;}
 article.btn {
     display: flex;
     align-items: center;
@@ -243,11 +245,12 @@ article.btn {
     min-height: 75px;
     width: 100%;
 }
-.F-number {
+.F-numbers {
     display: flex;
     position: relative;
     border-radius: 50%;
-    left: 12px;
+    top: 50px;
+    left: -15px;
     width: 24px; 
     height: 24px;
     background-color: #9356DC;
