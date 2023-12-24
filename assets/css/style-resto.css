@@ -48,6 +48,10 @@ header {
   font-size: 32px; /* Taille souhaitée */
 }
 
+.arrow-icon a {
+  color: inherit;
+}
+
 .logo-header {
   display: flex;
   width: 100%;
@@ -239,7 +243,7 @@ h2 .ln {
 
 /* FOOTER */
 footer {
-  min-width: 100%;
+  min-width: 100vh;
   gap: 20px;
   color: white;
   flex-direction: column;
@@ -281,15 +285,16 @@ footer {
     display: flex;
     min-width: 100%;
     top: -100px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
     background-color: #353535;
   }
   .footer-container {
     display: flex;
-    padding: 20px;
+    padding: 40px 20px 8px 20px;
     flex-direction: row;
-    gap: 100px;
+    justify-content: end;
+    gap: 60px;
   }
   .footer-titre {
     order: 2;
