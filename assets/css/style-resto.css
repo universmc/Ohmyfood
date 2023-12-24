@@ -267,6 +267,10 @@ footer {
   margin-right: 10px;
 }
 
+.contact a {
+  color: inherit;
+}
+
 /* VERSION DESKTOP */
 @media (min-width: 767.98px) {
   .position {
